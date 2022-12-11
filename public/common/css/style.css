@@ -1,0 +1,128 @@
+.calendar_box {
+  text-align: center;
+}
+
+.current_month {
+  font-size: 1.625rem;
+  text-align: center;
+  line-height: 1.42;
+  display: inline-block;
+  position: relative;
+  margin: 0 0.3rem;
+}
+
+.current_month em {
+  font-style: normal;
+  font-size: 1.23em;
+  padding: 0 3px;
+}
+
+a.current_month_back,
+a.current_month_next {
+  content: '';
+  background: url(../img/event/calendar_arrow.svg) center center/contain no-repeat;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  /* position: absolute; */
+  top: 50%;
+}
+
+a.current_month_back {
+  left: -2.75rem;
+  transform: translateY(15%);
+}
+
+a.current_month_next {
+  right: -2.75rem;
+  transform: translateY(15%) scaleX(-1);
+  /* transform: scaleX(-1); */
+}
+
+.calendar_area_list {
+  display: flex;
+  align-items: center;
+  max-width: 95%;
+  margin: 1.625rem auto 1.375rem;
+}
+
+.calendar_area_list p {
+  font-size: 1.125rem;
+  font-weight: 700;
+  width: 20%;
+}
+
+.calendar_area_list .event_area {
+  padding: 5px 1.625rem;
+}
+
+.calendar {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-bottom: none;
+}
+
+.calendar-head {
+  margin-top: 3%;
+}
+
+.calendar th {
+  width: calc(100% / 7);
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.calendar th.sun {
+  color: #DE3822;
+  background-color: #FFE2DD;
+}
+
+.calendar th.sat {
+  color: #0A5FC3;
+  background-color: #D6F4FF;
+}
+
+.calendar td {
+  width: calc(100% / 7);
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5% 0.5% 8%;
+  text-align: left;
+}
+
+.calendar td.sun span {
+  color: #DE3822;
+}
+
+.calendar td.sat span {
+  color: #1975BA;
+}
+
+.calendar td .schedule {
+  font-size: 0.875rem;
+  line-height: 1.28;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.arrow-back, a.arrow-next {
+  color: #1975BA;
+  text-decoration: none;
+}
+
+svg.bi-arrow-left-circle-fill,
+svg.bi-arrow-right-circle-fill {
+  content: '';
+    background: url(../img/event/calendar_arrow.svg) center center/contain no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    margin-bottom: 0.7rem;
+    /* position: absolute; */
+}
